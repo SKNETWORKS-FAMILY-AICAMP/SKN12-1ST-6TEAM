@@ -1,0 +1,52 @@
+def find_best_cars(family_size, budget, hobbies):
+    with engine.connect() as conn:
+        condition_query = text("""
+            SELECT condition_id, car_type_id FROM car_conditions
+            WHERE family_size = :family_size
+        """)
+        conditions = conn.execute(condition_query, {"family_size": family_size}).fetchall()
+        if not conditions:
+            print("해당 가족 인원수에 맞는 차량 조건이 없습니다.")
+            return None
+        
+        condition_ids = [row[0] for row in conditions]
+        car_type_ids = [row[1] for row in conditions]
+
+        hobby_query = text("""
+            SELECT DISTINCT condition_id FROM car_condition_hobbies
+            WHERE hobby_id IN (SELECT hobby_id FROM hobbies WHERE hobby_name IN :hobbies)
+        """)
+        hobby_conditions = conn.execute(hobby_query, {"hobbies": tuple(hobbies)}).fetchall()
+
+        hobby_condition_ids = [row[0] for row in hobby_conditions]
+        
+        matched_conditions = list(set(condition_ids) & set(hobby_condition_ids)) if hobby_condition_ids else condition_ids
+
+        if not matched_conditions:
+            print("취미 조건에 맞는 차량이 없지만, 가족 조건에 맞는 차량을 추천합니다.")
+            matched_conditions = condition_ids
+
+        car_query = text("""SELECT * FROM cars
+            WHERE car_type_id IN :car_type_ids
+            AND price <= :budget
+            ORDER BY price DESC, efficiency DESC
+            LIMIT 5
+        """)
+        best_cars = conn.execute(car_query, {"car_type_ids": tuple(car_type_ids), "budget": budget}).fetchall()
+
+        if not best_cars:
+            print("❌ 해당 조건에 맞는 차량이 없습니다.")
+            return None
+        
+        # 만약 차량이 3개 미만이면 추가 추천 (예산보다 약간 높은 가격도 포함)
+        if len(best_cars) < 3:
+            extra_query = text("""
+                SELECT car_name, brand, price, efficiency, horsepower FROM cars
+                WHERE car_type_id IN :car_type_ids
+                AND price <= :budget * 1.2  -- 예산보다 20% 높은 차량도 포함
+                ORDER BY price ASC, efficiency DESC
+                LIMIT :needed
+            """)
+            extra_cars = conn.execute(extra_query, {"car_type_ids": tuple(car_type_ids), "budget": budget, "needed": 3 - len(best_cars)}).fetchall()
+            best_cars += extra_cars
+        return best_cars
