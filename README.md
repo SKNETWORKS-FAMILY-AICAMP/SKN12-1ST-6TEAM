@@ -3,8 +3,7 @@
 
 | 이지복 | 정기헌 | 고남혁 | 이주영 | 김재현 |
 |--------|--------|--------|--------|--------|
-| ![]() | ![]() | ![]()
- | ![image](https://github.com/user-attachments/assets/9f1297fb-8137-4db4-a2e8-63c46d3e88a5)| ![image](https://github.com/user-attachments/assets/8b33f28e-d490-4b9f-a149-c68a48c72cfe)|
+| ![]() | ![]() | ![]() | ![image](https://github.com/user-attachments/assets/9f1297fb-8137-4db4-a2e8-63c46d3e88a5)| ![image](https://github.com/user-attachments/assets/8b33f28e-d490-4b9f-a149-c68a48c72cfe)|
   
 ---
 
