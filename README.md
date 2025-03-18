@@ -32,26 +32,24 @@
 - 효율적으로 DB를 구축하여 소비자의 의사결정 간소화
 - 사용자 친화적 추천 시스템, 소비자가 원하는 정보만 간략히 제공
 
-## 🛠️ 기술 스택
+### 🛠️ 기술 스택
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=Pandas&logoColor=white)
 
-## 📊ERD 구조
+### 📊ERD 구조
+![image](https://cdn.discordapp.com/attachments/1350039205560188992/1351390686771019806/image.png?ex=67da3427&is=67d8e2a7&hm=cadd5378274f1989c362134f35285bfd27299c2a57ff01863adfee87477b8d51&)
 
-
-## 📋 테이블 명세서
+### 📋 테이블 명세서
 ![image](https://github.com/user-attachments/assets/de165b9f-aed4-4c2d-bc27-7603581ca20a)
 
-## 🎬 Streamlit
+### 🎬 Streamlit
 
 
-
-## 💭 한줄 회고
+### 💭 한줄 회고
 - 이지복 : 
 - 정기헌 :
 - 고남혁 : 
 - 이주영 :
 - 김재현 :
-
-
