@@ -44,7 +44,7 @@
 ![image](https://github.com/user-attachments/assets/de165b9f-aed4-4c2d-bc27-7603581ca20a)
 
 ### 🎬 Streamlit
-![image](https://github.com/user-attachments/assets/400586f3-e6ae-4422-997c-8bbae43c6b49)
+![image](https://github.com/user-attachments/assets/996c2276-2737-42b3-a3a1-5062d1fd9f9c)
 
 
 ### 💭 한줄 회고
