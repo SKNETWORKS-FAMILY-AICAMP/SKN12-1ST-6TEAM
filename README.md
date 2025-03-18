@@ -41,8 +41,7 @@
 
 
 ## 📋 테이블 명세서
-
-
+![image](https://github.com/user-attachments/assets/de165b9f-aed4-4c2d-bc27-7603581ca20a)
 
 ## 🎬 Streamlit
 
