@@ -1,5 +1,5 @@
 # SKN12-1ST-6TEAM
-# 팀원소개
+## 👥 팀원소개
 
 | 이지복 | 정기헌 | 고남혁 | 이주영 | 김재현 |
 |--------|--------|--------|--------|--------|
@@ -31,3 +31,28 @@
 - 다양한 취향의 소비자에게 데이터에 기반해 적절한 차량 정보 제공
 - 효율적으로 DB를 구축하여 소비자의 의사결정 간소화
 - 사용자 친화적 추천 시스템, 소비자가 원하는 정보만 간략히 제공
+
+## 🛠️ 기술 스택
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white)
+
+## 📊ERD 구조
+
+
+## 📋 테이블 명세서
+
+
+
+## 🎬 Streamlit
+
+
+
+## 💭 한줄 회고
+- 이지복 : 
+- 정기헌 :
+- 고남혁 : 
+- 이주영 :
+- 김재현 :
+
+
